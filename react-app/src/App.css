@@ -1,7 +1,11 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: rgb(59, 80, 22);
 }
+
+
+/* Nav Bar CSS */
 
 .header-nav {
   display: flex;
@@ -30,7 +34,16 @@ html, body {
   margin-right: 7px;
 }
 
+/* Main Content CSS */
+
+
+/* Footer CSS */
+
+
 footer {
   background: lightgrey;
   padding: 10px;
+  position: absolute;
+  bottom: 0.1px;
+  text-align: center;
 }
