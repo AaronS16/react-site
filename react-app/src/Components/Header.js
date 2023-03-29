@@ -4,12 +4,9 @@ const Header = () => {
     return (
         <header>
             <nav className='header-nav'>
-                <img src={logo} width='40px' alt="react-logo"></img>
-                <ul className='nav-items'>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>            
+                <img className='react-logo' src={logo} width='40px' alt="react-logo"></img>
+                <h3 className='nav-logo-text'>ReactFacts</h3>
+                <h4 className='nav-title'>React Project</h4>           
             </nav>
         </header>
     )

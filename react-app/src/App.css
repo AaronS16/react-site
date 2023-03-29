@@ -5,26 +5,29 @@ html, body {
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  color: white;
+  background: green;
+  padding: 30px 25px;
 }
 
-.nav-items {
-  list-style: none;
-  display: flex;
+.nav-logo-text, .nav-title {
+  margin: 0;
 }
 
-.nav-items > li {
-  padding: 10px;
+.nav-logo-text {
+  margin-right: auto;
+  color: #61dafb;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav-title {
+  color: #DEEBF8;
+  font-weight: 600;
 }
 
 .react-logo {
-  width: 60px;
-}
-
-header {
-  background: green;
+  margin-right: 7px;
 }
 
 footer {
