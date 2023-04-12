@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: #282d35;
+}
+
+
+/* Nav Bar CSS */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  background: darkgreen;
+  padding: 30px 25px;
+}
+
+.nav-logo-text, .nav-title {
+  margin: 0;
+}
+
+.nav-logo-text {
+  margin-right: auto;
+  color: #61dafb;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav-title {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.react-logo {
+  margin-right: 7px;
+}
+
+/* Main Content CSS */
+
+main {
+  padding: 57px 27px;
+  color: white;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main-facts {
+  margin-top: 46px;
+}
+
+.main-facts > li {
+  padding-block: 10px;
+}
+
+.main-facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
+
+}
+
+/* Footer CSS */
+
+
+footer {
+  background: lightgrey;
+  padding: 10px;
+  position: absolute;
+  bottom: 0.1px;
+  text-align: center;
 }
