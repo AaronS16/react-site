@@ -1,14 +1,11 @@
+import grid from '../images/photo-grid.png'
+
 const Main = () => {
     return (
         <main>
-            <h1 className='main-title'>Fun facts about React</h1>
-            <ul className='main-facts'>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100k stars on GitHub</li>
-                <li>Is Maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
+            <img className="main-image" src={grid} alt='grid'></img>
+            <h1 className='main-h1'>Online Experiences</h1>
+            <p className='main-paragraph'>Join Unique interactive activities led by one-of-a-kind hosts-all without leaving home.</p>
         </main>
     )
 }
