@@ -1,19 +1,18 @@
-import contactImg from '../images/fluffykins.png'
 import phoneImg from '../images/phone-icon.png'
 import messageImg from '../images/mail-icon.png'
 
-const Contact = () => {
+const Contact = ({ img, name, phone, email }) => {
   return (
     <div className='contact-card'>
-        <img className='contact-photo' src={contactImg} alt='fluffkins pic'/>
-        <h3>Fluffykins</h3>
+        <img src={img} alt='fluffykins pic'/>
+        <h3>{name}</h3>
         <div className='info-group'>
             <img src={phoneImg} alt='phone icon'/>
-            <p>(212) 555-2345</p>
+            <p>{phone}</p>
         </div>
         <div className='info-group'>
             <img src={messageImg} alt='phone icon'/>
-            <p>fluff@me.com</p>
+            <p>{email}</p>
         </div>
     </div>
   )
