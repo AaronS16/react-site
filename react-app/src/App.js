@@ -1,24 +1,25 @@
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Card from './components/Card';
-import katie_zaferes from './images/katie-zaferes.png'
+import data from './data';
 import './index.css';
 
 const App = () => {
-  const nums = ['alice', 'bob', 'charlie', 'danielle']
+  const cardData = data.map((card) =>
+    <Card
+      photo={card.coverImg}
+      rating={card.stats.rating}
+      reviewCount={card.stats.reviewCount}
+      location={card.location}
+      title={card.title}
+      price={card.price}
+    />
+  )
   return (
     <div>
       <Navbar />
       <Main />
-      <Card 
-        photo={katie_zaferes}
-        rating={5.0}
-        reviewCount={6}
-        country='USA'
-        title="Life lessons with Katie Zaferes"
-        price={136}
-        map={nums.map((el) => `<p>${el}</p>`)}
-      />
+      {cardData}
     </div>
   );
 }
