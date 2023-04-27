@@ -5,21 +5,19 @@ import data from './data';
 import './index.css';
 
 const App = () => {
-  const cardData = data.map((card) =>
+  const cardData = data.map((item) =>
     <Card
-      photo={card.coverImg}
-      rating={card.stats.rating}
-      reviewCount={card.stats.reviewCount}
-      location={card.location}
-      title={card.title}
-      price={card.price}
+      key={item.id}
+      item={item}
     />
   )
   return (
     <div>
       <Navbar />
       <Main />
-      {cardData}
+      <section className='cards-list'>
+        {cardData}
+      </section>
     </div>
   );
 }
